@@ -1,0 +1,25 @@
+{
+  "name": "lambda-cd",
+  "version": "1.0.0",
+  "description": "Continuous deployment for AWS Lambda",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.67.0",
+    "filereader": "^0.10.3",
+    "aws-sdk": "^2.2.19"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylorking/lambdacd.git"
+  },
+  "author": "taylorking",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taylorking/lambdacd/issues"
+  },
+  "homepage": "https://github.com/taylorking/lambdacd#readme"
+}
