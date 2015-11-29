@@ -1,0 +1,4 @@
+#set($inputRoot = $input.path('$'))
+{"arn":"$input.params('arn')",
+ "body":$input.json('$')
+}
