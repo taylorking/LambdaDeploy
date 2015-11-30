@@ -22,7 +22,7 @@ Create a new Lambda Role
 
 Attach the Lamda Full Access policy. We need to do this because we need to be able to call Lambda.updateFunctionCode
 
-![](
+![](http://i.imgur.com/HafOGdZ.png)
 
 ##### Create the Lambda function and upload the code
 
