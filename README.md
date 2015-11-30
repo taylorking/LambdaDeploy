@@ -32,9 +32,37 @@ Create a new Lambda Function using your IAM role, and the zip file you just crea
 
 ![](http://i.imgur.com/dA31cQQ.png)
 
-### Configure AWS API Gateway
+##### Configure AWS API Gateway
 
-We need a way for github to be able to push to our AWS Lambda function and tell us that an update is available. With a Github webhook, we employ the push model in AWS Lambda, creating an event triggered with HTTPS
+Create a new API
 
+![](http://i.imgur.com/fitk8Xa.png)
 
-## Usage
+Create a new POST method
+
+![](http://i.imgur.com/gv39E4C.png)
+
+Configure the POST method to invoke the lambda function
+
+![](http://imgur.com/X2jyjXc.png)
+
+Configure the request url parameters
+
+![](http://imgur.com/FdCxofV.png)
+![](http://i.imgur.com/9tYOPMW.png)
+
+Create an Integration Request Mapping Template, and copy the code from inbound-integration-mapping-template.awsmappingtemplate
+
+![](http://i.imgur.com/PRvUJjn.png)
+
+Stage and Deploy your API
+
+![](http://i.imgur.com/VPVPDkk.png)
+
+Note the invoke url for your api
+
+![](http://i.imgur.com/4teMqzH.png)
+
+##### Configure Github Webhook
+
+### Usage
