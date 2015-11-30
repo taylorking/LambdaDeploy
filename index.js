@@ -17,7 +17,7 @@ exports.handler = function(event, context) {
     var stream = request(fileHandle).pipe(fs.createWriteStream('/tmp/update.zip'));
     stream.on('finish', function() {
       exec("./unzip /tmp/update.zip -d /tmp", function(err, stdout, stderr) {
-        exec("cp zip /tmp/*/ && cp npm-cli.js /tmp/*/ && cd /tmp/*/ && ./zip -r /tmp/updateform.zip *", function(err,stdout, stderr) {
+        exec("cp zip /tmp/*/ && cd /tmp/*/ && ./zip -r /tmp/updateform.zip *", function(err,stdout, stderr) {
           
           var reader = new FileReader();
       
