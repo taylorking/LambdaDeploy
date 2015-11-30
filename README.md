@@ -16,7 +16,13 @@ AWS Lambda is very restrictive on what you are allowed to do in terms of using t
 * [Configure Github Webhooks]()
 
 ##### Configure AWS IAM Role and Policy
+Create a new Lambda Role
 
+![](http://i.imgur.com/DXCpWNS.png)
+
+Attach the Lamda Full Access policy. We need to do this because we need to be able to call Lambda.updateFunctionCode
+
+![](
 
 ##### Create the Lambda function and upload the code
 
@@ -78,3 +84,13 @@ Configure the Github webhook in Repository Settings > Webhooks. The payload URL 
 
 
 ### Usage
+
+![](http://i.imgur.com/pRo0Arc.png)
+
+Push some code
+
+![](http://i.imgur.com/pTyLQPo.png)
+
+It has been uploaded to lambda
+
+![](http://i.imgur.com/RFzXBZr.png)
